@@ -64,11 +64,16 @@ h1, h2, h3, h4, h5, h6 {
     padding: 2rem;
     transition: border-color 0.2s ease, box-shadow 0.2s ease;
     height: 100%; /* Fondamentale per altezza uniforme */
+    display: flex; /* Abilita Flexbox */
+    flex-direction: column; /* Dispone gli elementi in colonna */
+    text-align: center; /* *** CORREZIONE: Centra tutto il testo *** */
 }
 
-.channel-card:hover {
-    border-color: var(--accent-color);
-    box-shadow: 0 0 20px rgba(37, 99, 235, 0.15); /* Bagliore elegante */
+.channel-card .card-content {
+    flex-grow: 1; /* Fa in modo che questo contenitore occupi tutto lo spazio disponibile */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* *** CORREZIONE: Centra verticalmente icona e titolo *** */
 }
 
 .channel-card .icon {
@@ -80,7 +85,20 @@ h1, h2, h3, h4, h5, h6 {
 .channel-card h5 {
     color: var(--text-primary);
     font-weight: 600;
-    margin-bottom: 1rem;
+}
+
+.channel-card .card-buttons {
+    margin-top: 1.5rem; /* Spazio sopra i bottoni */
+}
+
+.channel-card .btn {
+    width: 110px; /* *** CORREZIONE: Imposta una larghezza fissa per entrambi i bottoni *** */
+    margin: 0.25rem;
+}
+
+.channel-card:hover {
+    border-color: var(--accent-color);
+    box-shadow: 0 0 20px rgba(37, 99, 235, 0.15); /* Bagliore elegante */
 }
 
 /* Footer */
@@ -100,7 +118,7 @@ footer .copyright {
     background-color: var(--accent-color);
     border-color: var(--accent-color);
     font-weight: 600;
-    padding: 0.75rem 1.5rem;
+    padding: 0.5rem 1rem;
     transition: opacity 0.2s ease;
 }
 
@@ -111,6 +129,7 @@ footer .copyright {
 .btn-outline-light {
     border-color: var(--border-color);
     color: var(--text-secondary);
+    padding: 0.5rem 1rem;
 }
 
 .btn-outline-light:hover {
