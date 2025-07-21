@@ -1,8 +1,8 @@
 /* Stile Generale */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #121212; /* Sfondo principale scuro */
-    color: #e0e0e0; /* Colore testo generale chiaro */
+    background-color: #121212;
+    color: #e0e0e0;
 }
 
 /* Navbar */
@@ -16,16 +16,19 @@ body {
 }
 
 .navbar-brand .bi {
-    color: #0d6efd; /* Blu primario di Bootstrap */
+    color: #0d6efd;
 }
 
 /* Sezione Hero (Intestazione) */
 .hero-section {
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1518977956812-4a36e48d4578?q=80&w=2070&auto=format&fit=crop') no-repeat center center;
     background-size: cover;
-    height: 80vh; /* Altezza ridotta per meno spazio */
+    height: 75vh; /* *** CORREZIONE: Altezza ulteriormente ridotta *** */
     min-height: 400px;
-    padding-bottom: 0; /* Rimuove padding inferiore per ridurre spazio */
+    display: flex;
+    align-items: center;
+    padding-top: 60px; /* Spazio per la navbar */
+    margin-bottom: 0 !important; /* *** CORREZIONE: Rimuove il margine inferiore con forza *** */
 }
 
 .hero-section h1 {
@@ -34,22 +37,19 @@ body {
 
 /* Stile per le sezioni */
 section {
-    padding: 60px 0;
+    padding: 40px 0 !important; /* *** CORREZIONE: Ridotto il padding per meno spazio tra le sezioni *** */
 }
 
-/* CORREZIONE: Testo più leggibile su sfondi chiari */
-#about p {
-    color: #333; /* Testo scuro per la sezione "about" con sfondo chiaro */
-}
-
-/* Sezione Canali (Sfondo scuro) */
+/* Sezioni con sfondo scuro (es. Visione, Canali, Stato) */
 .bg-dark {
-    background-color: #1c1c1c !important; /* Sfondo leggermente più chiaro del body */
+    background-color: #1c1c1c !important;
 }
 
-/* CORREZIONE: Rende il testo leggibile nelle sezioni scure */
-.bg-dark .lead, .bg-dark p, .bg-dark h2, .bg-dark h5 {
-    color: #ffffff !important; /* Forziamo il colore bianco per la massima leggibilità */
+/* *** CORREZIONE CHIAVE: Rende il testo leggibile in tutte le sezioni scure *** */
+.bg-dark h2,
+.bg-dark p,
+.bg-dark .lead {
+    color: #ffffff !important; /* Forza il colore bianco per la massima leggibilità */
 }
 
 .channel-card {
@@ -58,6 +58,7 @@ section {
     border-radius: 10px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     height: 100%;
+    padding: 20px;
 }
 
 .channel-card:hover {
@@ -71,12 +72,13 @@ section {
 
 /* Sezione Contatti */
 #contact .lead {
-     color: #ccc; /* Colore leggermente più soft per il sottotitolo */
+     color: #ccc;
 }
 
 /* Footer */
 footer {
     background-color: #1c1c1c !important;
+    padding: 20px 0 !important;
 }
 
 /* Switch Lingua */
