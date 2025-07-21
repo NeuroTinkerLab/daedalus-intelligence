@@ -1,0 +1,169 @@
+
+/* --- General & Typography --- */
+body {
+    background-color: #0a0a0a; /* Un nero molto scuro, quasi assoluto */
+    color: #e0e0e0; /* Un grigio chiaro per il testo, non bianco puro per non affaticare */
+    font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.section-title {
+    color: #00d4ff; /* Ciano vibrante per i titoli delle sezioni */
+    margin-bottom: 1rem;
+}
+
+/* --- Navbar --- */
+.navbar {
+    background-color: rgba(10, 10, 10, 0.85);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-bottom: 1px solid #222;
+}
+
+.navbar-brand {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 700;
+    color: #00d4ff !important;
+}
+
+.lang-switcher {
+    color: #fff;
+    cursor: pointer;
+}
+
+.lang-option {
+    padding: 0 5px;
+    transition: color 0.3s ease;
+    color: #6c757d;
+}
+
+.lang-option.active {
+    color: #00d4ff;
+    font-weight: bold;
+}
+
+/* --- Hero Section --- */
+.hero-section {
+    background: linear-gradient(rgba(10, 10, 10, 0.7), rgba(10, 10, 10, 1)), url('https://www.transparenttextures.com/patterns/cubes.png');
+    padding: 150px 0;
+    color: #fff;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-section h1 {
+    text-shadow: 0 0 15px rgba(0, 212, 255, 0.6);
+}
+
+/* --- Buttons --- */
+.btn-primary {
+    background-color: #00d4ff;
+    border-color: #00d4ff;
+    color: #0a0a0a;
+    font-weight: bold;
+    padding: 12px 30px;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #fff;
+    border-color: #fff;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 212, 255, 0.2);
+}
+
+.btn-outline-primary {
+    border-color: #00d4ff;
+    color: #00d4ff;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.btn-outline-primary:hover {
+    background-color: #00d4ff;
+    color: #0a0a0a;
+}
+
+/* --- Feature Cards (Platform Section) --- */
+.feature-card {
+    background-color: #1a1a1a;
+    padding: 30px;
+    border-radius: 10px;
+    border: 1px solid #222;
+    height: 100%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 212, 255, 0.1);
+}
+
+.feature-card .icon-container {
+    font-size: 3rem;
+    color: #00d4ff;
+    margin-bottom: 1rem;
+}
+
+/* --- Channel Cards --- */
+.channel-card {
+    background-color: #1a1a1a;
+    padding: 30px;
+    border-radius: 10px;
+    border-left: 5px solid #00d4ff;
+    transition: all 0.3s ease;
+}
+
+.channel-card:hover {
+    background-color: #222;
+}
+
+.channel-card h5 {
+    color: #fff;
+}
+
+.channel-card p {
+    color: #adb5bd;
+    min-height: 70px; /* Altezza fissa per allineare le card */
+}
+
+/* --- Sections --- */
+.bg-dark-subtle {
+    background-color: #111 !important;
+}
+
+/* --- Footer --- */
+footer {
+    background-color: #111;
+    border-top: 1px solid #222;
+}
+
+footer a {
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #00d4ff !important;
+}
+
+/* --- Animation on Scroll --- */
+.hero-section, .feature-card, .channel-card, .section-title, .text-muted, footer p, footer a {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 0.8s forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
