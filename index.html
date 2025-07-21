@@ -1,180 +1,125 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title data-lang-key="title">Daedalus: Strategic Intelligence Ecosystem</title>
-
+    <title data-lang-key="site_title">Daedalus Intelligence</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-
     <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
-
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="#"><i class="bi bi-bullseye"></i> DAEDALUS</a>
-            <div class="d-flex ms-auto">
-                <div class="lang-switcher">
-                    <span id="lang-it" class="lang-option active">IT</span>
-                    <span>|</span>
-                    <span id="lang-en" class="lang-option">EN</span>
-                </div>
+            <a class="navbar-brand" href="#">
+                <i class="bi bi-bullseye me-2"></i>
+                <span data-lang-key="nav_brand">Daedalus Intelligence</span>
+            </a>
+            <div class="language-switcher">
+                <button id="lang-it" class="btn btn-outline-secondary btn-sm">IT</button>
+                <button id="lang-en" class="btn btn-secondary btn-sm">EN</button>
             </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <header id="hero" class="hero-section">
-        <div class="container text-center">
-            <h1 class="display-4 fw-bold" data-lang-key="heroTitle">Daedalus: Where Data Becomes Decision.</h1>
-            <p class="lead my-4" data-lang-key="heroSubtitle">An advanced AI platform that transforms global information noise into strategic foresight. Currently in public testing phase.</p>
-            <a href="#channels" class="btn btn-primary btn-lg" data-lang-key="heroButton">Access the Free Preview</a>
+    <header class="hero-section d-flex align-items-center text-center">
+        <div class="container">
+            <h1 class="display-4 fw-bold" data-lang-key="hero_title">Strategic Intelligence for a Complex World</h1>
+            <p class="lead mt-3" data-lang-key="hero_subtitle">We are currently in the testing phase. A preview of our potential is available for free on our Telegram channels.</p>
         </div>
     </header>
 
     <!-- Vision Section -->
     <section id="vision" class="py-5">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 mx-auto text-center">
-                    <h2 class="section-title" data-lang-key="visionTitle">Our Vision</h2>
-                    <p class="text-muted" data-lang-key="visionText">The world is complex and interconnected. We believe that the best decisions, in business and finance, are born from a deep understanding of the hidden relationships between events. Daedalus was created for this: to find the signal in the noise.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Platform Section -->
-    <section id="platform" class="py-5 bg-dark-subtle">
-        <div class="container">
-            <div class="text-center mb-5">
-                <h2 class="section-title" data-lang-key="platformTitle">How the Daedalus Platform Works</h2>
-            </div>
-            <div class="row text-center">
-                <div class="col-md-3">
-                    <div class="feature-card">
-                        <div class="icon-container"><i class="bi bi-reception-4"></i></div>
-                        <h5 data-lang-key="feature1Title">360° Data Ingestion</h5>
-                        <p data-lang-key="feature1Text">Our system constantly scans hundreds of global information sources.</p>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="feature-card">
-                        <div class="icon-container"><i class="bi bi-diagram-3"></i></div>
-                        <h5 data-lang-key="feature2Title">Knowledge Graph Creation</h5>
-                        <p data-lang-key="feature2Text">Events and entities are mapped into a dynamic knowledge graph, revealing their connections.</p>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="feature-card">
-                        <div class="icon-container"><i class="bi bi-graph-up-arrow"></i></div>
-                        <h5 data-lang-key="feature3Title">Causal & Predictive Analysis</h5>
-                        <p data-lang-key="feature3Text">Proprietary algorithms and AI models analyze the graph to identify causes, effects, and likely future developments.</p>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="feature-card">
-                        <div class="icon-container"><i class="bi bi-people"></i></div>
-                        <h5 data-lang-key="feature4Title">Multi-Perspective Synthesis</h5>
-                        <p data-lang-key="feature4Text">The analysis is refined by simulating different expert profiles to provide relevant, actionable insights.</p>
-                    </div>
-                </div>
-            </div>
+        <div class="container text-center">
+            <h2 class="mb-4" data-lang-key="vision_title">Our Vision</h2>
+            <p class="lead text-muted" data-lang-key="vision_text">The world is complex and interconnected. We believe that the best decisions, in business and finance, arise from a deep understanding of the hidden relationships between events. Daedalus was born for this: to find the signal in the noise.</p>
         </div>
     </section>
 
     <!-- Channels Section -->
-    <section id="channels" class="py-5">
+    <section id="channels" class="py-5 bg-dark">
         <div class="container">
             <div class="text-center mb-5">
-                <h2 class="section-title" data-lang-key="channelsTitle">Exclusive Preview: Our Intelligence Channels</h2>
-                <p class="text-muted mx-auto" style="max-width: 700px;" data-lang-key="channelsSubtitle">During this testing phase, we are providing free access to the output of four of our virtual analysts. This is an opportunity to witness the power of Daedalus and receive high-quality insights directly on Telegram.</p>
+                <h2 class="fw-bold" data-lang-key="channels_title">Exclusive Preview: Our Intelligence Channels</h2>
+                <p class="lead" data-lang-key="channels_subtitle">During this testing phase, the results from our virtual analysts are available for free. It's an opportunity to see the power of Daedalus in action.</p>
             </div>
-            <div class="row">
-                <!-- CEO Channel -->
-                <div class="col-lg-6 mb-4">
-                    <div class="channel-card">
-                        <h5><i class="bi bi-briefcase-fill"></i> <span data-lang-key="ceoTitle">CEO & Corporate Strategy</span></h5>
-                        <p data-lang-key="ceoDescription">Focus on M&A, operational risks, corporate strategies, and high-level business trends.</p>
-                        <div class="d-flex justify-content-around">
-                            <a href="https://t.me/Daedalus_CEO_IT" target="_blank" class="btn btn-outline-primary">🇮🇹 <span data-lang-key="itChannel">IT Channel</span></a>
-                            <a href="https://t.me/Daedalus_CEO_EN" target="_blank" class="btn btn-outline-primary">🇬🇧 <span data-lang-key="enChannel">EN Channel</span></a>
+            <div class="row g-4">
+                <!-- CEO / Corporate -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="channel-card h-100">
+                        <div class="card-body text-center">
+                            <i class="bi bi-briefcase-fill display-4 text-primary"></i>
+                            <h5 class="card-title mt-3" data-lang-key="ceo_title">CEO & Corporate</h5>
+                            <a href="https://t.me/Daedalus_CEO_IT" target="_blank" class="btn btn-outline-light btn-sm mt-3">Italiano</a>
+                            <a href="https://t.me/Daedalus_CEO_EN" target="_blank" class="btn btn-primary btn-sm mt-3">English</a>
                         </div>
                     </div>
                 </div>
-                <!-- Investment Channel -->
-                <div class="col-lg-6 mb-4">
-                    <div class="channel-card">
-                        <h5><i class="bi bi-cash-coin"></i> <span data-lang-key="investmentTitle">Investment Analyst</span></h5>
-                        <p data-lang-key="investmentDescription">Actionable insights on financial markets, asset classes, and investment opportunities.</p>
-                        <div class="d-flex justify-content-around">
-                            <a href="https://t.me/Daedalus_investment_IT" target="_blank" class="btn btn-outline-primary">🇮🇹 <span data-lang-key="itChannel">IT Channel</span></a>
-                            <a href="https://t.me/Daedalus_investment_EN" target="_blank" class="btn btn-outline-primary">🇬🇧 <span data-lang-key="enChannel">EN Channel</span></a>
+                <!-- Geopolitics -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="channel-card h-100">
+                        <div class="card-body text-center">
+                            <i class="bi bi-globe-americas display-4 text-primary"></i>
+                            <h5 class="card-title mt-3" data-lang-key="geo_title">Geopolitics</h5>
+                            <a href="https://t.me/Daedalus_geopolitics_IT" target="_blank" class="btn btn-outline-light btn-sm mt-3">Italiano</a>
+                            <a href="https://t.me/Daedalus_geopolitics_EN" target="_blank" class="btn btn-primary btn-sm mt-3">English</a>
                         </div>
                     </div>
                 </div>
-                <!-- Geopolitics Channel -->
-                <div class="col-lg-6 mb-4">
-                    <div class="channel-card">
-                        <h5><i class="bi bi-globe-americas"></i> <span data-lang-key="geopoliticsTitle">Geopolitical Analyst</span></h5>
-                        <p data-lang-key="geopoliticsDescription">Analysis of international relations, political risks, and global power dynamics.</p>
-                        <div class="d-flex justify-content-around">
-                            <a href="https://t.me/Daedalus_geopolitics_IT" target="_blank" class="btn btn-outline-primary">🇮🇹 <span data-lang-key="itChannel">IT Channel</span></a>
-                            <a href="https://t.me/Daedalus_geopolitics_EN" target="_blank" class="btn btn-outline-primary">🇬🇧 <span data-lang-key="enChannel">EN Channel</span></a>
+                <!-- Investment -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="channel-card h-100">
+                        <div class="card-body text-center">
+                            <i class="bi bi-graph-up-arrow display-4 text-primary"></i>
+                            <h5 class="card-title mt-3" data-lang-key="invest_title">Investment</h5>
+                            <a href="https://t.me/Daedalus_investment_IT" target="_blank" class="btn btn-outline-light btn-sm mt-3">Italiano</a>
+                            <a href="https://t.me/Daedalus_investment_EN" target="_blank" class="btn btn-primary btn-sm mt-3">English</a>
                         </div>
                     </div>
                 </div>
-                <!-- Tech Channel -->
-                <div class="col-lg-6 mb-4">
-                    <div class="channel-card">
-                        <h5><i class="bi bi-cpu-fill"></i> <span data-lang-key="techTitle">Tech Analyst</span></h5>
-                        <p data-lang-key="techDescription">Insights on emerging technologies, market disruptions, and innovation trends.</p>
-                        <div class="d-flex justify-content-around">
-                            <a href="https://t.me/Daedalus_tech_IT" target="_blank" class="btn btn-outline-primary">🇮🇹 <span data-lang-key="itChannel">IT Channel</span></a>
-                            <a href="https://t.me/Daedalus_tech_ENG" target="_blank" class="btn btn-outline-primary">🇬🇧 <span data-lang-key="enChannel">EN Channel</span></a>
+                <!-- Tech -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="channel-card h-100">
+                        <div class="card-body text-center">
+                            <i class="bi bi-memory-fill display-4 text-primary"></i>
+                            <h5 class="card-title mt-3" data-lang-key="tech_title">Tech</h5>
+                            <a href="https://t.me/Daedalus_tech_IT" target="_blank" class="btn btn-outline-light btn-sm mt-3">Italiano</a>
+                            <a href="https://t.me/Daedalus_tech_ENG" target="_blank" class="btn btn-primary btn-sm mt-3">English</a>
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Project Status Section -->
-     <section id="status" class="py-5 bg-dark-subtle">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 mx-auto text-center">
-                    <h2 class="section-title" data-lang-key="statusTitle">Project Status</h2>
-                    <p class="text-muted" data-lang-key="statusText">Daedalus is a proprietary platform under continuous development. The current testing phase allows us to refine our algorithms and validate the quality of our analyses. User feedback during this phase is invaluable.</p>
                 </div>
             </div>
         </div>
     </section>
 
-
-    <!-- Footer -->
-    <footer class="py-4">
+    <!-- Status Section -->
+    <section id="status" class="py-5">
         <div class="container text-center">
-            <p data-lang-key="footerText">For information or feedback on the project during this testing phase, contact us:</p>
-            <a href="mailto:neurotinkerlab@gmail.com" class="text-white">neurotinkerlab@gmail.com</a>
-            <hr class="my-3">
-            <p class="mb-0">&copy; 2025 Daedalus Intelligence. Developed by NeuroTinkerLab.</p>
+            <h2 class="mb-4" data-lang-key="status_title">Project Status</h2>
+            <p class="lead text-muted" data-lang-key="status_text">Daedalus is a proprietary platform in continuous development. The current testing phase allows us to refine our algorithms and validate the quality of our analysis. User feedback in this phase is invaluable.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <footer id="contact" class="py-5 bg-dark text-center">
+        <div class="container">
+            <h2 class="fw-bold" data-lang-key="contact_title">Get in Touch</h2>
+            <p class="lead mt-3" data-lang-key="contact_subtitle">For inquiries about pilot projects or to be notified about our commercial launch, please contact us.</p>
+            <a href="mailto:neurotinkerlab@gmail.com" class="btn btn-primary btn-lg mt-4">
+                <i class="bi bi-envelope-fill me-2"></i>
+                neurotinkerlab@gmail.com
+            </a>
+            <p class="mt-5 mb-0 text-muted">&copy; 2025 Daedalus Intelligence. All Rights Reserved.</p>
         </div>
     </footer>
 
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Custom JS -->
     <script src="script.js"></script>
 </body>

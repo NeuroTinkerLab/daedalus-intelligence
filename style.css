@@ -1,87 +1,86 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Variabili Colori */
+:root {
+    --primary-color: #0d6efd;
+    --dark-bg: #121212;
+    --light-dark-bg: #1c1c1c;
+    --text-light: #f8f9fa;
+    --text-muted-light: #adb5bd;
+    --text-dark: #212529;
+    --text-muted-dark: #6c757d;
+}
+
 /* Stile Generale */
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #121212;
-    color: #e0e0e0;
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--dark-bg);
+    color: var(--text-light);
+    line-height: 1.6;
 }
 
 /* Navbar */
 .navbar {
-    background-color: rgba(18, 18, 18, 0.8);
+    background-color: rgba(28, 28, 28, 0.85);
     backdrop-filter: blur(10px);
+    border-bottom: 1px solid #333;
 }
 
-.navbar-brand {
-    font-weight: bold;
-}
-
-.navbar-brand .bi {
-    color: #0d6efd;
-}
-
-/* Sezione Hero (Intestazione) */
+/* Hero Section */
 .hero-section {
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1518977956812-4a36e48d4578?q=80&w=2070&auto=format&fit=crop') no-repeat center center;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1518977956812-4a36e48d4578?q=80&w=2070&auto=format&fit=crop') no-repeat center center;
     background-size: cover;
-    height: 75vh; /* *** CORREZIONE: Altezza ulteriormente ridotta *** */
-    min-height: 400px;
-    display: flex;
-    align-items: center;
-    padding-top: 60px; /* Spazio per la navbar */
-    margin-bottom: 0 !important; /* *** CORREZIONE: Rimuove il margine inferiore con forza *** */
+    min-height: 85vh;
+    color: var(--text-light);
 }
 
-.hero-section h1 {
-    font-weight: 700;
+/* Sezioni con sfondo chiaro (alternate) */
+#vision, #status {
+    background-color: var(--text-light);
+    color: var(--text-dark);
 }
 
-/* Stile per le sezioni */
-section {
-    padding: 40px 0 !important; /* *** CORREZIONE: Ridotto il padding per meno spazio tra le sezioni *** */
+#vision .text-muted,
+#status .text-muted {
+    color: var(--text-muted-dark) !important;
 }
 
-/* Sezioni con sfondo scuro (es. Visione, Canali, Stato) */
-.bg-dark {
-    background-color: #1c1c1c !important;
+/* Sezioni con sfondo scuro */
+#channels, footer {
+    background-color: var(--light-dark-bg);
+    color: var(--text-light);
 }
 
-/* *** CORREZIONE CHIAVE: Rende il testo leggibile in tutte le sezioni scure *** */
-.bg-dark h2,
-.bg-dark p,
-.bg-dark .lead {
-    color: #ffffff !important; /* Forza il colore bianco per la massima leggibilità */
+#channels .lead,
+footer .lead {
+    color: var(--text-muted-light);
 }
 
+/* Card dei canali */
 .channel-card {
     background-color: #2a2a2a;
     border: 1px solid #444;
-    border-radius: 10px;
+    border-radius: .5rem;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    height: 100%;
-    padding: 20px;
 }
 
 .channel-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 10px 20px rgba(0, 123, 255, 0.2);
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 123, 255, 0.15);
 }
 
-.channel-card .bi {
-    color: #0d6efd;
+/* Bottoni */
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
 }
 
-/* Sezione Contatti */
-#contact .lead {
-     color: #ccc;
-}
-
-/* Footer */
-footer {
-    background-color: #1c1c1c !important;
-    padding: 20px 0 !important;
+.btn-primary:hover {
+    opacity: 0.9;
 }
 
 /* Switch Lingua */
 .language-switcher .btn {
-    margin-left: 5px;
+    border-radius: .25rem;
 }
