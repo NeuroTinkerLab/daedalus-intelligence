@@ -27,6 +27,3 @@ The goal of this site is to provide a professional and clear introduction to the
 *   **Google Fonts:** For professional and highly readable typography.
 *   **GitHub Pages:** For hosting the static site.
 
----
-
-*This project was developed to be clean, responsive, and professional.*
